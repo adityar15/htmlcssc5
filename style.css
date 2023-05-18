@@ -1,0 +1,15 @@
+/* This is style for navbar */
+
+.header{
+    background: red;
+    color: yellow;
+    /* padding: 10px 20px 30px 40px; */
+    /* padding-bottom: 20px;
+    padding-top: 20px */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.para{
+    color: blue;
+}
