@@ -2,35 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoes Marketplace</title>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>JS Demo</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <style type="text/tailwindcss">
-        .input{
-            @apply border border-gray-300 p-2 w-full rounded-md
-            focus:ring focus:ring-purple-400 focus:outline-none;
-        }
-    </style>
 </head>
 <body>
-    <header class="bg-red-500 text-yellow-500 p-2">
-        <label class="text-2xl text-gray-50 font-semibold">Shoe Shop</label>
-        <a href="https://google.com"> Go to Google</a>
-    </header>
 
     <div>
-        <form class="flex flex-col gap-4 w-full p-4 md:p-16" action="https://example.com/sendemail" method="POST">
-            <label class="text-lg text-gray-700" for="email">Email</label>
-           <div class="flex flex-col md:flex-row items-center gap-4">
-            <input type="email" class="input" />
-            <button class="bg-lime-500 text-gray-50 p-1 rounded-md"
-            type="submit">Subscribe</button>
-           </div>
+        <button id="minus-btn">
+            -
+        </button>
 
-        </form>
+        <span id="number">
+           0
+        </span>
+
+        <button id="plus-btn">+</button>
     </div>
+
+    <form action="" method="POST" id="ns-form">
+        <input type="email" name="userEmail" id="email-input" />
+        <button>Subscribe</button>
+    </form>
+
+
+    <form action="" method="POST" id="github-form" class="flex items-center space-x-2">
+        <input type="text" name="username" class="border p-2 rounded-md" />
+        <button class="bg-blue-500 rounded-md px-5 py-2 text-gray-50">Search</button>
+    </form>
+
+    <div class="flex items-center space-x-2">
+        <img src="" alt="user-image" id="userimage" class="w-10 h-10 rounded-full" />
+        <div>
+            <h1 id="username">User name</h1>
+            <a href="http://" id="profile-link" target="_blank">Link</a>
+        </div>
+    </div>
+
+    <script src="./main.js">
+    </script>
 </body>
 </html>
